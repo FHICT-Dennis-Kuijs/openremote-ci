@@ -20,7 +20,7 @@ jobs:
         with:
           gradle-version: '9.4.1'
       - name: Run Install Dist
-        run: ./gradlew installDist
+        run: ./gradlew build
       - name: Archive manager build
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7
         with:
