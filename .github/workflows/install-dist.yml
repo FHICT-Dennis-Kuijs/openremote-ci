@@ -16,9 +16,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
-      - uses: gradle/actions/setup-gradle@v5
+      - uses: gradle/actions/setup-gradle@v6
         with:
-          gradle-version: '9.1'
+          gradle-version: '9.4'
       - name: Run Install Dist
         run: ./gradlew installDist
       - name: Archive manager build
